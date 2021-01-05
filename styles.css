@@ -1,0 +1,73 @@
+html {background-color: #fff !important;}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    border: tomato;
+    grid-template-areas:
+      ". . . ."
+      ". . . ."
+      ". . . .";
+      width:100vw;
+      height:100vh;
+  }
+
+.headerleft {
+ 
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: #fff;
+  padding-left: 15px;
+}
+.headerright {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-color: #fff;
+  text-align: right;
+}
+.footerleft {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 3 / 3;
+  background-color: #dadce0;
+}
+.footerright {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row: 3 / 3;
+  background-color: #dadce0;
+}
+.google-img {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 2 / 3;
+  justify-self: center;
+  align-self: center;
+}
+.headerlinksleft {
+  display:inline-block;
+  padding: 15px;
+  opacity: 0.75;
+  font-size: 13px;
+}
+.headlinksright {
+  display:inline-block;
+  padding: 15px;
+  opacity: 0.75;
+  font-size: 13px;
+}
+.signin {
+  color: #fff;
+  height: 27px;
+  width: 70px;
+  border: 0;
+  box-shadow: 0;
+  background: #4285F4;
+  border-radius: 0;
+}
