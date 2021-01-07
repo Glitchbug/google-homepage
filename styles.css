@@ -8,9 +8,10 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 1fr 50px;
+    grid-template-rows: 50px 1fr 50px 50px;
     border: tomato;
     grid-template-areas:
+      ". . . ."
       ". . . ."
       ". . . ."
       ". . . .";
@@ -31,17 +32,32 @@ body {
   background-color: #fff;
   text-align: right;
 }
+.countrybar {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 3 / 3;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #dadce0;
+  font-size: 14px;
+  color: #70757a;
+}
 .footerleft {
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row: 3 / 3;
-  background-color: #dadce0;
+  grid-row: 4 / 4;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  color: #70757a;
+  text-align: left;
 }
 .footerright {
   grid-column-start: 3;
   grid-column-end: 5;
-  grid-row: 3 / 3;
-  background-color: #dadce0;
+  grid-row: 4 / 4;
+  background-color: #f2f2f2;
+  font-size: 14px;
+  color: #70757a;
+  text-align:right;
 }
 .google-img {
   grid-column-start: 1;
@@ -53,15 +69,30 @@ body {
 .headerlinksleft {
   display:inline-block;
   padding: 15px;
-  opacity: 0.75;
-  font-size: 13px;
+  font-size: 14px;
 }
+.footerlinksleft {
+  display:inline-block;
+  padding: 15px;
+  font-size: 14px;
+  color: #70757a !important;
+}
+
+.countrybarlink {
+  justify-self: center;
+  align-self: center;
+  padding-left: 15px;
+  font-size: 14px;
+  color: #70757a !important;
+}
+
 .headlinksright {
   display:inline-block;
   padding: 15px;
-  opacity: 0.75;
   font-size: 13px;
 }
+
+
 .signin {
   color: #fff;
   height: 27px;
@@ -69,5 +100,59 @@ body {
   border: 0;
   box-shadow: 0;
   background: #4285F4;
-  border-radius: 0;
+  border-radius: 0;;
+  font-size: 16px;
+}
+a {
+  opacity: 0.75;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+.searchbox {
+  align-self: center;
+  border: 1px solid #CCC !important;
+  justify-self: center;
+  align-self: center;
+  width: 584;
+  color: black;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+.googlelogo {
+  padding-left: 170px;
+}
+.search {
+  align-self: center;
+  justify-self: center;
+  background-color:#f8f9fa;
+  border: 1px solid #f8f9fa;
+  height: 36px;
+  min-width: 54px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-left: 170px;
+}
+.feel-lucky {
+  align-self: center;
+  justify-self: center;
+  background-color:#f8f9fa;
+  border: 1px solid #f8f9fa;
+  height: 36px;
+  min-width: 54px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin-left: 40px;
 }
